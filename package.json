@@ -1,0 +1,27 @@
+{
+  "name": "karma-json-fixtures-preprocessor",
+  "version": "0.0.0",
+  "description": "A Karma plugin to compile JSON files and make them accessible from Javascript code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dmitriiabramov/karma-json-fixtures-preprocessor.git"
+  },
+  "keywords": [
+    "json",
+    "karma",
+    "preprocessor",
+    "fixture",
+    "fixtures",
+    "test"
+  ],
+  "author": "Dmitrii Abramov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriiabramov/karma-json-fixtures-preprocessor/issues"
+  },
+  "homepage": "https://github.com/dmitriiabramov/karma-json-fixtures-preprocessor"
+}
