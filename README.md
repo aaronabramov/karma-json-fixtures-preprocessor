@@ -34,8 +34,8 @@ module.exports = function(config) {
 Preprocessor requires .json files and converts them into .js files by storing json data as javascript objects under `__fixtures__` namespace.
 
 the following file:
+`./fixtures/test.json`
 ```json
-// ./fixtures/test.json
 {
     "a": "test"
 }
