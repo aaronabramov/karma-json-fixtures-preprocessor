@@ -24,7 +24,15 @@ module.exports = function(config) {
 
     files: [
       './fixtures/**/*.json'
-    ]
+    ],
+    jsonFixturesPreprocessor: {
+      // strip this from the file path \ fixture name
+      stripPrefix: 'test/fixtures',
+      // strip this to the file path \ fixture name
+      prependPrefix: 'mock/',
+      // change the global fixtures variable name
+      variableName: '__mocks__'
+    }
   });
 };
 ```
