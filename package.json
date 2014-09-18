@@ -1,6 +1,6 @@
 {
   "name": "karma-json-fixtures-preprocessor",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Karma plugin to compile JSON files and make them accessible from Javascript code",
   "main": "index.js",
   "scripts": {
