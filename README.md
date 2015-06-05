@@ -31,7 +31,11 @@ module.exports = function(config) {
       // strip this to the file path \ fixture name
       prependPrefix: 'mock/',
       // change the global fixtures variable name
-      variableName: '__mocks__'
+      variableName: '__mocks__',
+      // transform the filename
+      transformPath: function(path) {
+        return path + '.js';
+      }
     }
   });
 };

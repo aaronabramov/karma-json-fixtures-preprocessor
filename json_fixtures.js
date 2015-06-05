@@ -16,6 +16,10 @@ module.exports = (function () {
         var stripPrefix = new RegExp('^' + (config.stripPrefix || '')),
             prependPrefix = config.prependPrefix || '';
 
+        var transformPath = config.transformPath || function(filepath) {
+                return filepath.replace(/\.json$/, '.js');
+            };
+
         return function (content, file, done) {
             var fixtureName = file.originalPath
                 .replace(basePath + '/', '')
@@ -27,7 +31,8 @@ module.exports = (function () {
             // Update the fixture name
             fixtureName = prependPrefix + fixtureName.replace(stripPrefix, '');
 
-            file.path = file.path.replace(/\.json$/, '.js');
+            // transform file path
+            file.path = transformPath(file.path);
 
             done(util.format(template, fixtureName, content));
         };
