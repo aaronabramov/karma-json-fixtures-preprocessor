@@ -1,7 +1,14 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - "iojs"
-  - "iojs-v1.0.4"
+- '0.12'
+- '0.11'
+- '0.10'
+- iojs
+- iojs-v1.0.4
+deploy:
+  provider: npm
+  email: dmitrii@rheia.us
+  api_key:
+    secure: WMiYMf8+S7ZN4H4fT9ozkjfipV9wA3PmLjBqBbT/xoFdISmJUkLQMHZLO0B4uB0DZ7y19IJlqBoB7jM06kF0z9NwskTgOqpVhHJlDtKNhNjs7KThQe0OEcYOLZHjq/jG+eF+RTvbzuCJLlhwhuZy7TdmJP/3U38C1OZ+qMgYJb0=
+  on:
+    repo: dmitriiabramov/karma-json-fixtures-preprocessor
