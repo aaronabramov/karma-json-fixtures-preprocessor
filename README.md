@@ -1,6 +1,8 @@
 karma-json-fixtures-preprocessor
 ================================
 
+[![Build Status](https://travis-ci.org/dmitriiabramov/karma-json-fixtures-preprocessor.svg)](https://travis-ci.org/dmitriiabramov/karma-json-fixtures-preprocessor)
+
 ##### Preprocessor for converting .json files into .js files and making them accessible from karma test environment
 
 ## Installation
