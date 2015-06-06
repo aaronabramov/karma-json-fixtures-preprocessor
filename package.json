@@ -4,7 +4,7 @@
   "description": "A Karma plugin to compile JSON files and make them accessible from Javascript code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/karma/bin/karma start ./test/test_karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/dmitriiabramov/karma-json-fixtures-preprocessor/issues"
   },
-  "homepage": "https://github.com/dmitriiabramov/karma-json-fixtures-preprocessor"
+  "homepage": "https://github.com/dmitriiabramov/karma-json-fixtures-preprocessor",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "karma": "^0.12.36",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.17"
+  }
 }
