@@ -10,7 +10,7 @@ karma-json-fixtures-preprocessor
 {
     "devDependencies": {
         "karma": "~0.12.1",
-        "karma-json-fixtures-preprocessor": "0.0.1"
+        "karma-json-fixtures-preprocessor": "0.0.4"
     }
 }
 ```
