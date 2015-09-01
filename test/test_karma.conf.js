@@ -29,7 +29,10 @@ module.exports = function(config) {
         preprocessors: {
             'fixtures/*.json': ['json_fixtures']
         },
-
+        
+        ngHtml2JsPreprocessor: {
+          camelCase: true
+        },
 
         // test results reporter to use
         // possible values: 'dots', 'progress'

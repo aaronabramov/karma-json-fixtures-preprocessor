@@ -9,6 +9,12 @@ module.exports = (function () {
         return 'window.' + varName + ' = window.' + varName + ' || {};\n' +
             'window.' + varName + '[\'%s\'] = %s;\n';
     }
+    
+    function camalize(fixtureName) {
+        return fixtureName.replace(/(?:_|-)(\w)/g, function(q, c) {
+            return c ? c.toUpperCase() : '';
+        });
+    }
 
     function createJsonFixturesPreprocessor(basePath, config) {
         config = typeof config === 'object' ? config : {};
@@ -28,7 +34,12 @@ module.exports = (function () {
             // Set the template
             var template = getTemplate(config.variableName);
 
-            // Update the fixture name
+            //camalize fixture name
+            if (config.camelCase) {
+                fixtureName = camalize(fixtureName);
+            }
+            
+            // Update the fixture name            
             fixtureName = prependPrefix + fixtureName.replace(stripPrefix, '');
 
             // transform file path
