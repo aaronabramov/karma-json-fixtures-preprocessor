@@ -34,6 +34,8 @@ module.exports = function(config) {
       prependPrefix: 'mock/',
       // change the global fixtures variable name
       variableName: '__mocks__',
+      // camelize fixture filenames (e.g 'fixtures/aa-bb_cc.json' becames __fixtures__['fixtures/aaBbCc'])
+      camelizeFilenames: true,
       // transform the filename
       transformPath: function(path) {
         return path + '.js';
