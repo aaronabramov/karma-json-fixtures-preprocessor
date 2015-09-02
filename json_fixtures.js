@@ -1,3 +1,5 @@
+var camelize = require('./camelize');
+
 module.exports = (function () {
     'use strict';
 
@@ -8,12 +10,6 @@ module.exports = (function () {
 
         return 'window.' + varName + ' = window.' + varName + ' || {};\n' +
             'window.' + varName + '[\'%s\'] = %s;\n';
-    }
-    
-    function camalize(fixtureName) {
-        return fixtureName.replace(/(?:_|-)(\w)/g, function(q, c) {
-            return c ? c.toUpperCase() : '';
-        });
     }
 
     function createJsonFixturesPreprocessor(basePath, config) {
@@ -35,11 +31,11 @@ module.exports = (function () {
             var template = getTemplate(config.variableName);
 
             //camalize fixture name
-            if (config.camelCase) {
-                fixtureName = camalize(fixtureName);
+            if (config.camelizeFilenames) {
+                fixtureName = camelize(fixtureName);
             }
-            
-            // Update the fixture name            
+
+            // Update the fixture name
             fixtureName = prependPrefix + fixtureName.replace(stripPrefix, '');
 
             // transform file path
