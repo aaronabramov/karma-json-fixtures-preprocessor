@@ -30,6 +30,9 @@ module.exports = function(config) {
             'fixtures/*.json': ['json_fixtures']
         },
 
+        jsonFixturesPreprocessor: {
+            camelizeFilenames: true
+        },
 
         // test results reporter to use
         // possible values: 'dots', 'progress'

@@ -1,3 +1,5 @@
+var camelize = require('./camelize');
+
 module.exports = (function () {
     'use strict';
 
@@ -27,6 +29,11 @@ module.exports = (function () {
 
             // Set the template
             var template = getTemplate(config.variableName);
+
+            //camalize fixture name
+            if (config.camelizeFilenames) {
+                fixtureName = camelize(fixtureName);
+            }
 
             // Update the fixture name
             fixtureName = prependPrefix + fixtureName.replace(stripPrefix, '');
