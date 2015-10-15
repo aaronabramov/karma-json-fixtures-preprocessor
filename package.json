@@ -21,7 +21,7 @@
     "test"
   ],
   "author": "Dmitrii Abramov",
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/dmitriiabramov/karma-json-fixtures-preprocessor/issues"
   },
