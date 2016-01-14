@@ -32,8 +32,8 @@
     "karma": "^0.13.19",
     "karma-chai": "^0.1.0",
     "karma-mocha": "^0.1.10",
-    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.3",
     "mocha": "^2.3.0",
-    "phantomjs": "^1.9.17"
+    "phantomjs": "^1.9.19"
   }
 }
