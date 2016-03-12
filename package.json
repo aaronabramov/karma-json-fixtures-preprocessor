@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:dmitriiabramov/karma-json-fixtures-preprocessor.git"
+    "url": "git@github.com:abramovdmitrii/karma-json-fixtures-preprocessor.git"
   },
   "keywords": [
     "json",
@@ -23,9 +23,9 @@
   "author": "Dmitrii Abramov",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/dmitriiabramov/karma-json-fixtures-preprocessor/issues"
+    "url": "https://github.com/abramovdmitrii/karma-json-fixtures-preprocessor"
   },
-  "homepage": "https://github.com/dmitriiabramov/karma-json-fixtures-preprocessor",
+  "homepage": "https://github.com/abramovdmitrii/karma-json-fixtures-preprocessor",
   "devDependencies": {
     "babel": "^5.8.23",
     "chai": "^3.2.0",
