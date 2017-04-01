@@ -21,9 +21,9 @@ karma-json-fixtures-preprocessor
 // karma.conf.js
 module.exports = function(config) {
   config.set({
-    plugins: {
+    plugins: [
       'karma-json-fixtures-preprocessor'
-    },
+    ],
 
     preprocessors: {
       './fixtures/**/*.json': ['json_fixtures']
